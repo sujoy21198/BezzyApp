@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eae8fe">
+    <RelativeLayout
+        android:id="@+id/back_bezy"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/go_bezzy"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25sp"
+            android:layout_toRightOf="@id/back_image"
+            android:fontFamily="sans-serif-light"
+            android:text="Go Bezzy"
+            android:textColor="@color/gradstart"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3dp"
+        android:elevation="3dp"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        android:layout_below="@id/back_bezy">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+        android:id="@+id/tv_what"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:text="What your Email Id?"
+        android:textSize="30sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#031C30"
+        />
+    <TextView
+        android:id="@+id/tv_sent"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:text="We sent You a text."
+        android:textSize="30sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#524379A3"
+        android:layout_below="@id/tv_what"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/otp_textlayout"
+        android:layout_below="@id/tv_sent"
+        android:hint="Enter Mail Id"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_send"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_sent"
+            android:inputType="text"
+            android:ems="6"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/tv_reSend"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="Resend"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#021A25"
+        android:layout_below="@id/otp_textlayout"/>
+
+
+    <Button
+        android:id="@+id/btn_logedin"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:text="Next"
+        android:layout_below="@id/tv_reSend"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_button_background"
+        android:layout_marginTop="60dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFF"/>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

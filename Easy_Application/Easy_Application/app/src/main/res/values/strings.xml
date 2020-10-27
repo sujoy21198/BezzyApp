@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Bezzy</string>
+    <string name="invalid_name">Please Enter Valid Name</string>
+    <string name="invalid_email">Please Enter invalid Email Id</string>
+    <string name="invalida_email">Please Enter Valid Email Id</string>
+    <string name="invalid_fullname">Please  Enter Full Name</string>
+    <string name="invalid_password">Please Enter Password</string>
+    <string name="invalid_cnfpassword">Please Enter the Right Password</string>
+    <string name="home">Home</string>
+    <string name="chat">chat</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string-array name="gender">
+        <item>Select Your Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Welcome Home</string>
+
+
+    <string name="title_activity_o_t_p">OTPActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>

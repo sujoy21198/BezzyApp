@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.easy_application">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.bezzy.Ui.View.UI.Friend_notification"></activity>
+        <activity android:name="com.bezzy.Ui.View.UI.Upload" />
+        <activity android:name="com.bezzy.Ui.View.UI.showprofile" />
+        <activity android:name="com.bezzy.Ui.View.UI.COTPActivity" />
+        <activity android:name="com.bezzy.Ui.View.UI.Changepassword" />
+        <activity android:name="com.bezzy.Ui.View.UI.Editprofile" />
+        <activity
+            android:name="com.bezzy.Ui.View.UI.OTPActivity"
+            android:label="@string/title_activity_o_t_p"
+            android:theme="@style/OtpTheme" />
+        <activity android:name="com.bezzy.Ui.View.UI.Welcome" />
+        <activity android:name="com.bezzy.Ui.View.UI.Forgot_pas" />
+        <activity android:name="com.bezzy.Ui.View.UI.Profile" />
+        <activity
+            android:name="com.bezzy.Ui.View.UI.Registration"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name="com.bezzy.Ui.View.UI.LoginActivity"
+            android:theme="@style/LoginTheme" />
+        <activity android:name="com.bezzy.Ui.View.UI.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
