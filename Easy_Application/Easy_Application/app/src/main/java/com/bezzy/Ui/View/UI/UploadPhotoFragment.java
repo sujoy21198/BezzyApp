@@ -19,6 +19,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.easy_application.R;
+import com.theartofdev.edmodo.cropper.CropImage;
+import com.theartofdev.edmodo.cropper.CropImageView;
 
 
 public class UploadPhotoFragment extends Fragment {
@@ -51,6 +53,11 @@ public class UploadPhotoFragment extends Fragment {
                     String[] permissions = {Manifest.permission.READ_EXTERNAL_STORAGE};
                     requestPermissions(permissions,PERMISSION_CODE);
                 }else{
+                    CropImage.activity()
+                            .setAspectRatio(1,1)
+                            .setCropShape(CropImageView.CropShape.OVAL)
+                            .setOutputCompressQuality(25)
+                            .start(getActivity());
                     pickImageFromGallery();
                 }
             }
