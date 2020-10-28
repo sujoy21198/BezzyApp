@@ -10,6 +10,7 @@
            android:layout_height="400dp"
            android:scaleType="centerCrop"
            android:id="@+id/image_view"
+           android:src="@drawable/ic_baseline_backup_24"
            />
         <Button
             android:layout_width="match_parent"
@@ -17,6 +18,15 @@
             android:text="choose image"
             android:id="@+id/choose_image_button"
             />
-
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="say something ...">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </LinearLayout>

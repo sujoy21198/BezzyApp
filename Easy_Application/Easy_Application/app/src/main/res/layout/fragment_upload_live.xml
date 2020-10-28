@@ -2,12 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bezzy.Ui.View.UI.UploadVideoFragment">
+    tools:context="com.bezzy.Ui.View.UI.UploadLiveFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="feature coming soon" />
+        android:text="Feature coming soon" />
 
 </FrameLayout>

@@ -44,7 +44,7 @@ public class UploadPhotoFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_upload_photo, container, false);
         imageView = view.findViewById(R.id.image_view);
         button = view.findViewById(R.id.choose_image_button);
-                button.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(ActivityCompat.checkSelfPermission(getContext(),Manifest.permission.READ_EXTERNAL_STORAGE)== PackageManager.PERMISSION_DENIED){
