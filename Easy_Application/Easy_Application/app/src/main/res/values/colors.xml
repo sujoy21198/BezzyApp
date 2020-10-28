@@ -7,4 +7,6 @@
     <color name="gragend">#10c0ff</color>
     <color name="colourblack">#000</color>
     <color name="colourwhite">#FFF</color>
+    <color name="colorbtnNext">#D2AB39</color>
+    <color name="tomato">#f0513c</color>
 </resources>
